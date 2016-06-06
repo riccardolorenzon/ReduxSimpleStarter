@@ -1,6 +1,6 @@
 import {renderComponent, expect} from '../test_helper';
-/*
-import CommentList from '../=../src/components/comment_list';
+
+import CommentList from '../../src/components/comment_list';
 
 describe('CommentList', () => {
   let component;
@@ -19,4 +19,3 @@ describe('CommentList', () => {
     expect(component).to.contain('Other New Comment');
   });
 });
-*/

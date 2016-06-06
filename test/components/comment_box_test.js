@@ -13,7 +13,7 @@ describe ('CommentBox', () => {
   });
 
   it('has a text area', () => {
-    expect(component.find('textare')).to.exist;
+    expect(component.find('textarea')).to.exist;
   });
 
   it('has a button', () => {
