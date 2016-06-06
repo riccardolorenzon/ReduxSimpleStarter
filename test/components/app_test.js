@@ -9,6 +9,10 @@ describe('App' , () => {
   });
 
   it('renders something', () => {
-    expect(component).to.exist;
+    expect(component).to.contain('React simple starter');
+  });
+  it('shows the correct text', () => {
+    // use 'expect' to make an 'assertion' about a target
+    expect
   });
 });
