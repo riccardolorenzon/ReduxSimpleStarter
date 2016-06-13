@@ -1,8 +1,10 @@
 import React from 'react';
+import Header from './header';
 
 export default () => {
   return (
     <div>
+      <Header />
       Super Special Secret Recipe
       <ul>
         <li>1 Cup Sugar</li>
