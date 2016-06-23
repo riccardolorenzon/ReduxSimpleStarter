@@ -8,3 +8,5 @@ npm-debug.log
 server/config.js
 
 client/node_modules
+client/bundle.js
+client/npm-debug.log
