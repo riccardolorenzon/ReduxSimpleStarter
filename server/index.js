@@ -13,12 +13,18 @@ const router = require('./router');
 //mongodb ORM
 const mongoose = require('mongoose');
 
+const cors = require('cors');
+
 // DB Setup
 mongoose.connect('mongodb://localhost:auth/auth');
 
 // App Setup
 // every request is gonna go through morgan(loggin system) ...
 app.use(morgan('combined'));
+
+// if the request is coming from a different port and/or domain, then let it get through
+app.use(cors());
+
 // ... and be parsed
 app.use(bodyParser.json({ type: '*/*' }));
 router(app);
