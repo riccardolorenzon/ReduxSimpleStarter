@@ -21,7 +21,6 @@ class Signin extends Component {
 
   render() {
     const { handleSubmit, fields : { email, password }} = this.props;
-    console.log(this.props.errorMessage);
     return (
       <form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
         <fieldset className="form-group">
@@ -40,10 +39,7 @@ class Signin extends Component {
 }
 
 function mapStateToProps(state) {
-  return
-  {
-    errorMessage: state.auth.error
-  };
+  return Object.assign({}, { errorMessage: state.auth.error });
 }
 
 export default reduxForm({
